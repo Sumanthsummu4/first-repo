@@ -16,7 +16,7 @@ wc -l data.csv
 grep -r "error" logs/
 
 # 6. Display the last 10 lines of "app.log"
-Tail -10 app.log
+tail -10 app.log
 
 # 7. Change permissions of "script.sh" to make it executable for everyone
 chmod a+x script.sh
@@ -31,7 +31,7 @@ history 20
 ps aux --sort=%mem
 
 # 11. Find all directories named "backup" anywhere on the system
-find / -type d name "backup" 2>/dev/null
+find / -type d -name "backup" 2>/dev/null
 
 # 12. "Replace every occurrence of "foo" with "bar" in "example.txt" and save to "new_example.txt
 sed 's/foo/bar/g' example.txt > new_example.txt
